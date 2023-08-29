@@ -1,5 +1,8 @@
 pipeline {
-  agent any
+  agent {
+  label 'label2'
+  }
+
   stages {
     stage('Cloning Git') {
       steps {
