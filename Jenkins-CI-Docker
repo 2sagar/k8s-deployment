@@ -1,15 +1,15 @@
 pipeline {
   environment {
-    dockerimagename = "elevendevops/myelevendevopsimage"
+    dockerimagename = "sagar1296/my-tomcat"
     registry_url = "https://registry.hub.docker.com"
-    registryCredential = 'my-docker-private-id'
+    registryCredential = 'docker'
     }
     tools {
-        maven 'maven3.8.6'
+        maven 'maven'
     }
     
 	agent {
-     label 'CI-Jenkins-Slave'
+     label 'label1'
   }
   
   stages {
