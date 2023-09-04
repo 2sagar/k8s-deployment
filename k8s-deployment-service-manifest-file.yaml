@@ -19,7 +19,7 @@ spec:
       - name: my-registry-key
       containers:
       - name: elevendevops-container
-        image: sagar1296/newimage:latest
+        image: sagar1296/my-tomcat:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
