@@ -14,8 +14,8 @@ pipeline {
 
         steps {
               sshagent(['ssh-k8s']) {
-             sh "scp -o StrictHostKeyChecking=no  k8s-deployment-service-manifest-file.yaml  ubuntu@15.207.54.219:/home/ubuntu"
-              sh "ssh -o StrictHostKeyChecking=no ubuntu@15.207.54.219 'kubectl apply -f k8s-deployment-service-manifest-file.yaml ' "
+             sh "scp -o StrictHostKeyChecking=no  k8s-deployment-service-manifest-file.yaml  ubuntu@65.0.61.60:/home/ubuntu"
+              sh "ssh -o StrictHostKeyChecking=no ubuntu@65.0.61.60 'kubectl apply -f k8s-deployment-service-manifest-file.yaml ' "
            
 
         }
